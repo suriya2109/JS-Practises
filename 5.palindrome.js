@@ -12,3 +12,10 @@ function palindrome(str) {
 }
 
 console.log(palindrome('raDar'));
+
+// function palindrome(str) {
+//     clearedString = str.toLowerCase();
+//     reversedString = str.split('').reverse().join('');
+//     return clearedString === reversedString.toLowerCase();
+// }
+// console.log(palindrome('raDar'));

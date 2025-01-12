@@ -1,16 +1,17 @@
 nestedArray = [1, 2, [3, 4, 5, [6, 7]],
     [8, 9]
 ];
-console.log(flattenArr(nestedArray));
 
-function flattenArr(arr) {
+function flattenArr(nestedArray) {
     flatArr = [];
-    arr.forEach(item => {
+    nestedArray.forEach(item => {
         if (Array.isArray(item)) {
-            flatArr = flatArr.concat(flattenArr(item));
+            flatArr = flatArr.concat(flattenArr((item)));
         } else {
-            flatArr.push(item);
+            flatArr.push(item)
         }
     });
     return flatArr;
 }
+
+console.log(flattenArr(nestedArray));
