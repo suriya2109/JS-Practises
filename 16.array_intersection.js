@@ -6,4 +6,4 @@ function arrayIntersection(arr1, aar2) {
     return [...new Set(result)];
 }
 
-console.log(arrayIntersection([1, 2, 3, 3, 6], [2, 6, 8]));
+console.log(arrayIntersection([1, 2, 3, 3, 6], [2, 6, 6, 8]));

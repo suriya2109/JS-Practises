@@ -13,7 +13,6 @@ function balancedParenthess(arr) {
         }
     }
     return stack.length === 0;
-
 }
 
 console.log(balancedParenthess(')'));

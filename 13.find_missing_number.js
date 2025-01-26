@@ -17,4 +17,4 @@ function findMissingNumber(arr) {
 
 }
 
-console.log(findMissingNumber([1, 4, 2, 5, 6]));
+console.log(findMissingNumber([10, 2, 3, 4, 1, 5, 9, 6, 8]));

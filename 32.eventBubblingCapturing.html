@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="outDiv"> Out Div
+        <div id="midDiv"> Mid Div
+            <div id="innerDiv">
+                Inner Div
+            </div>
+        </div>
+    </div>
+    <script>
+        var outDIv = document.getElementById('outDiv').addEventListener('click', () => {
+            console.log("Out Div has been clicked.")
+        });
+        document.getElementById('midDiv').addEventListener('click', () => {
+            console.log("Mid Div has been clicked.")
+        });
+        document.getElementById('innerDiv').addEventListener('click', () => {
+            console.log("Inner Div has been clicked.")
+        });
+    </script>
+</body>
+
+</html>
