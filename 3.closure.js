@@ -16,16 +16,40 @@
 // Q 2
 
 // Closure means that an inner function has access to the variables of its outer function, even after the outer function has returned.
-function exam() {
-    const name = "rowdy";
+// function exam() {
+//     const name = "rowdy";
 
-    function inner() {
-        return name;
+//     function inner() {
+//         return name;
+//     }
+//     return inner;
+// }
+
+// const inn_fuc = exam();
+
+// console.log(inn_fuc);
+// console.log(inn_fuc());
+
+
+function counter() {
+    let counter = 0;
+    return {
+        increment: function() {
+            counter++;
+            return counter;
+        },
+        decrement: function() {
+            counter--;
+            return counter;
+        },
+        displayCount: function() {
+            let message = "The current count " + counter;
+            return message;
+        }
     }
-    return inner;
 }
 
-const inn_fuc = exam();
-
-console.log(inn_fuc);
-console.log(inn_fuc());
+const myCount = counter();
+console.log(myCount.increment());
+// console.log(myCount.decrement());
+console.log(myCount.displayCount());
