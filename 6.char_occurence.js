@@ -1,7 +1,5 @@
 function charOccurence(str) {
-
     const counts = {};
-
     for (let char of str) {
         if (counts[char]) {
             counts[char]++;

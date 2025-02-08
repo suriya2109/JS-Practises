@@ -26,15 +26,18 @@ function removeDuplicateArr(arr) {
     // console.log(result)
 
     const uniqueArray = [];
+    const uniqueArray1 = [];
     const seen = {};
     for (let i = 0; i < arr.length; i++) {
         const value = arr[i];
         if (!seen[value]) {
             seen[value] = true;
             uniqueArray.push(value);
+        } else {
+            uniqueArray1.push(value);
         }
     }
-    return uniqueArray;
+    return uniqueArray, uniqueArray1;
 };
 let arr = [1, 5, 6, 7, 7, 84, 5, 6, 3, 0];
 console.log(removeDuplicateArr(arr));
