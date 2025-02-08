@@ -9,3 +9,9 @@ async function fetchData() {
 }
 
 fetchData();
+
+// What is the difference between a promise and an async/await function? 
+// 1)async/await 
+// async/await is a cleaner, more readable way to handle Promises 
+// 2)promise 
+// promises are the underlying mechanism
