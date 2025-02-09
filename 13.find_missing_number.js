@@ -18,3 +18,7 @@ function findMissingNumber(arr) {
 }
 
 console.log(findMissingNumber([10, 2, 3, 4, 1, 5, 9, 6, 8]));
+
+
+// Describe the purpose of the reduce method in arrays?
+// The reduce() method in JavaScript is used to reduce an array to a single value by applying a function on each element in the array.

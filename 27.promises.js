@@ -28,3 +28,9 @@ myPromise().then(
     }).catch(err => {
     console.log("Error", err);
 })
+
+// Explain the concept of Promises in JavaScript. 
+// Promises handle asynchronous tasks in JavaScript by providing a more readable and structured approach than callbacks for handling outputs 
+// Pending 
+// Fulfilled 
+// Rejected

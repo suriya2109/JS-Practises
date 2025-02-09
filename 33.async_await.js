@@ -15,3 +15,10 @@ fetchData();
 // async/await is a cleaner, more readable way to handle Promises 
 // 2)promise 
 // promises are the underlying mechanism
+
+// Explaination about aysyc and await ?
+// What is the use of async and await in JavaScript? 
+// async 
+// Declaring a function with async makes it return a promise 
+// await 
+// It pauses the execution of the code until the promise it's waiting for is resolved, then returns the resolved value

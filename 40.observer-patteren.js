@@ -13,3 +13,5 @@ button.addEventListener("click", observer2);
 
 // Explain the Observer pattern and how it relates to JavaScript 
 // The Observer Pattern is a design pattern in which an object (called the subject) maintains a list of its dependents (called observers) and notifies them of any changes, typically through a broadcast mechanism.
+
+// Madhan gowri Subject and audiences are the observer.

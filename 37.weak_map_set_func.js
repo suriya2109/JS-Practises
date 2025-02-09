@@ -17,3 +17,7 @@ console.log(weakset.has(obj));
 
 // What are Weak maps and Weak sets in JavaScript? 
 // Both WeakMap and WeakSet are non-iterable, have no size property, and are ideal for temporary data storage and memory-efficient management of objects.
+
+
+// ***uses 
+// its again used for fire storing temporary files.
