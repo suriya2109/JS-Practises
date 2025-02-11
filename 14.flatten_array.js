@@ -6,7 +6,7 @@ function flattenArr(nestedArray) {
     flatArr = [];
     nestedArray.forEach(item => {
         if (Array.isArray(item)) {
-            flatArr = flatArr.concat(flattenArr((item)));
+            flatArr = flatArr.concat(flattenArr(item));
         } else {
             flatArr.push(item)
         }

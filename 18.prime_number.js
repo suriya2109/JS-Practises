@@ -1,5 +1,7 @@
 function isPrime(number) {
-    for (let i = 2; i <= number / 2; i++) {
+    if (number < 2) return false; // Handle 0, 1, and negative numbers
+
+    for (let i = 2; i <= Math.sqrt(number); i++) {
         if (number % i === 0) {
             return false;
         }
@@ -7,4 +9,4 @@ function isPrime(number) {
     return true;
 }
 
-console.log(isPrime(0))
+console.log(isPrime(0)); // false (Correct Output)
