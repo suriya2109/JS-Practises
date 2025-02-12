@@ -1,0 +1,169 @@
+Most Important JavaScript 
+Concepts for Interviews 
+1. Closures 
+2. Hoisting 
+3. Coercion 
+4. Debounce 
+5. Throttling 
+6. Currying 
+7. IIFE 
+8. Generators 
+9. Event Looping 
+10. Event Bubbling 
+
+
+1) DOM?
+The DOM represents the web page as a tree-like structure.
+--------------
+2) Object 
+Which is a collection of key-value pairs. Objects can contain other objects, functions, and data types. 
+let person = { 
+name: "John", 
+age: 30, 
+isStudent: false 
+};
+__________
+
+3) Arrays 
+Which is a list-like structure, used to store multiple values in an ordered fashion. Arrays in JavaScript are zero-indexed. 
+let fruits = ["apple", "banana", "cherry"];
+________
+
+4) Function 
+A function is a block of reusable code. In JavaScript functions are treated as objects and can be assigned to variables, passed as arguments, or returned from other functions. 
+function greet(name) { 
+return 'Hello, ${name}`; 
+}
+________
+
+5) NAN
+Special JavaScript value that checks if a given value is not a Number.
+________
+
+6) undefined
+let a; 
+console.log(a); 
+The variable a has been declared but not initialized hence 
+it is given the default value of undefined.
+__________
+
+7) NUll 
+let b = null; 
+console.log(b); 
+Which has been declared null for the time being.
+
+b = "Now assigned"; console.log(b); 
+But it can be assigned a value later. 
+Now assigned.
+________
+
+8) What is an IIFE (Immediately Invoked Function Expression)? 
+An Immediately Invoked Function Expression (IIFE) is a JavaScript function that is defined and executed immediately after it's created.
+________
+
+9)What are Higher-Order Functions? Can you give an example? 
+
+Higher-order functions are functions that can either take other functions as arguments or return a function as a result.
+__________
+
+10) Explain the Observer pattern and how it relates to JavaScript 
+The Observer Pattern is a design pattern in which an object (called the subject) maintains a list of its dependents (called observers) and notifies them of any changes, typically through a broadcast mechanism.
+
+Madhan gowri Subject and audiences are the observer.
+__________
+
+11)Explain the concept of Promises in JavaScript? 
+Promises handle asynchronous tasks in JavaScript by providing a more readable and structured approach than callbacks for handling outputs 
+Pending 
+Fulfilled 
+Rejected
+__________
+
+12)What is the difference between a promise and an async/await function? 
+1)async/await 
+async/await is a cleaner, more readable way to handle Promises 
+2)promise 
+promises are the underlying mechanism.
+__________
+
+13) Explaination about aysyc and await ?
+What is the use of async and await in JavaScript? 
+async 
+Declaring a function with async makes it return a promise 
+await 
+It pauses the execution of the code until the promise it's waiting for is resolved, then returns the resolved value.
+__________
+
+14) What is the difference between call, apply, and bind? 
+1)Call 
+Invokes the function immediately, with this set to thisArg, and accepts arguments one by one.
+2)Apply 
+Invokes the function immediately, with this set to thisArg, but takes arguments as an array.
+3)Bind 
+Returns a new function with this set to thisArg, and any preset arguments, but doesn't invoke it immediately.
+__________
+
+15) Explain call, apply and bind?
+call 
+Runs the function immediately, passing each argument separately. 
+apply 
+Runs the function immediately, passing arguments as an array.
+bind 
+Creates a new function with preset this and arguments, which you can call later.
+__________
+
+16) Event Loop 
+A technique that allows you to manage events for multiple elements more efficiently by using a single event.
+listener on a common parent element rather than on each individual child element.
+__________
+
+17)What is Event Delegation? 
+A technique that allows you to manage events for multiple elements more efficiently by using a single event listener on a common parent element rather than on each individual child element.
+*Improves Performance 
+*Handles Dynamic Elements 
+*Cleaner Code
+__________
+
+18)Describe the purpose of the reduce method in arrays?
+The reduce() method in JavaScript is used to reduce an array to a single value by applying a function on each element in the array.
+__________
+
+19)Explain the concept of Currying in JavaScript? 
+Currying is a concept in functional programming where a function that takes multiple arguments is transformed into a sequence of functions, each accepting a single argument.
+__________
+
+20)What are Weak maps and Weak sets in JavaScript? 
+* Weak maps 
+A WeakMap is a collection of key-value pairs where the keys are required to be objects.
+* Weak sets 
+A collection of unique object references that only stores objects and does not allow any primitives.
+__________
+
+21)How does JavaScript handle Memory management? 
+a)Memory Allocation
+1) Stack Memory 
+Numbers 
+Strings  
+Booleans 
+Null  
+Undefined 
+Functions 
+
+2)Heap Memory
+Objects
+Arrays 
+Functions 
+
+b)Garbage Collection 
+X   10 
+name   "aarya"
+flag   true
+table_joker  null
+book_data    { "Lily", 90} 
+ 
+Variables    References
+__________
+
+22) What is JavaScript's Strict mode, and how is it enabled? 
+It enforces various rules to make your code cleaner and more secure
+
