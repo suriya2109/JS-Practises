@@ -12,13 +12,13 @@
 
 // console.log(findLongString("suriya is a businessman"));
 // duplicate array
-let arr = [1, 2, 2, 3, 54, 56, 7, 8, 56, 9, 9, 8];
+// let arr = [1, 2, 2, 3, 54, 56, 7, 8, 56, 9, 9, 8];
 
-function removeDuplicateArr(arr) {
-    return arr.filter((val, index, self) => (self.indexOf(val) == index));
-}
+// function removeDuplicateArr(arr) {
+//     return arr.filter((val, index, self) => (self.indexOf(val) == index));
+// }
 
-console.log(removeDuplicateArr(arr));
+// console.log(removeDuplicateArr(arr));
 
 // Reverse String
 // function reverseString(str) {
@@ -44,3 +44,28 @@ console.log(removeDuplicateArr(arr));
 // console.log(maxArr);
 // let minArr = arr.sort((a, b) => a - b);
 // console.log(minArr);
+
+// var createCounter = function(init) {
+//     let count = init;
+//     return {
+//         increment: function() {
+//             ++count;
+//             return count;
+//         }
+//     }
+// };
+
+// const counter = createCounter(5)
+// console.log(counter.increment()) // 6
+
+var map = function(arr, fn) {
+    retrunArray = [];
+    // let multipleCount = fn;
+    for (let i = 1; i <= arr.length; i++) {
+        let count = i * fn;
+        retrunArray.push(count)
+    }
+    return retrunArray;
+};
+
+console.log(map([1, 2, 3], 3));
