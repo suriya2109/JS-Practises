@@ -1,0 +1,52 @@
+// Ajex defination? // AJAX and JSON enable dynamic, interactive web pages without requiring full page reloads. AJAX (Asynchronous JavaScript and XML) allows sending and receiving data in the background. JSON (JavaScript Object Notation) is a lightweight
+format for exchanging data between the server and client. To implement this, I use the `fetch` API or `XMLHttpRequest` to send asynchronous requests to the server. The server responds with JSON data, which is parsed using `JSON.parse()` or directly with
+modern JavaScript. I then dynamically update the DOM with the retrieved data, such as loading content, updating forms, or displaying live search results. Proper error handling ensures seamless interactions, even if requests fail. ______
+<!-- Another example:
+AJAX enables asynchronous communication between the client and server without a full page reload -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="fetchData()">Fetch Data</button>
+    <ul id="listItems"></ul>
+    <script>
+        // Old Ajax Call Method
+
+        // function fetch() {
+        //     var xhttp = new XMLHttpRequest();
+        //     xhttp.onreadystatechange = function() {
+        //         console.log(this.responseText);
+        //     }
+        //     xhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
+        //     xhttp.send();
+        // }
+        function fetchData() {
+
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status:${response.status}`)
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const userList = document.getElementById("listItems");
+                    userList.innerHTML = "";
+                    data.forEach(e => {
+                        const listDetails = document.createElement("li");
+                        listDetails.textContent = `${e.name} - ${e.email}`;
+                        userList.appendChild(listDetails);
+                    });
+                })
+                .catch(error => console.log("Error data fetching", error));
+        }
+    </script>
+</body>
+
+</html>
