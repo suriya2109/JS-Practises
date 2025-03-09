@@ -7,6 +7,13 @@ for (var i = 0; i < 5; i++) {
 
 // ----------------
 
+// ✅ Expected: 0, 1, 2, 3, 4
+// ❌ Actual Output: 5, 5, 5, 5, 5
+// 🔹 Why?
+
+// var is function-scoped, meaning there is only one i shared across all iterations.
+// By the time setTimeout runs, i has already reached 5.
+
 // Block Scope
 for (let i = 0; i < 5; i++) {
     setTimeout(function() {

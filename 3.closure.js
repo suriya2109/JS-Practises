@@ -53,3 +53,6 @@ const myCount = counter();
 console.log(myCount.increment());
 // console.log(myCount.decrement());
 console.log(myCount.displayCount());
+
+// What is Recursive?
+// Recursive means involving doing or saying the same thing several times in order to produce a particular result or effect.
