@@ -34,3 +34,37 @@ console.log(flattenArr(nestedArray));
 // }
 
 // console.log(findFalttenArray(array, []));
+
+var flat = function(arr, n) {
+    let flattenedArr = [];
+
+    if (n > 0) { // Continue flattening if n > 0
+        arr.forEach((item) => {
+            if (Array.isArray(item)) {
+                flattenedArr = flattenedArr.concat(flat(item, n - 1)); // Correct recursive call
+            } else {
+                flattenedArr.push(item);
+            }
+        });
+    } else {
+        return arr; // If n is 0, return the array as is
+    }
+
+    return flattenedArr;
+};
+
+// Test Cases
+console.log(flat([1, 2, 3, 4, [4, 55, 6],
+    [5, 7, [7, 9, 20]]
+], 0));
+// Output: [1, 2, 3, 4, [4, 55, 6], [5, 7, [7, 9, 20]]] (unchanged)
+
+console.log(flat([1, 2, 3, 4, [4, 55, 6],
+    [5, 7, [7, 9, 20]]
+], 1));
+// Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, [7, 9, 20]] (flattened 1 level)
+
+console.log(flat([1, 2, 3, 4, [4, 55, 6],
+    [5, 7, [7, 9, 20]]
+], 2));
+// Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, 7, 9, 20] (flattened 2 levels)
