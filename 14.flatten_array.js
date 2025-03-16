@@ -38,18 +38,14 @@ console.log(flattenArr(nestedArray));
 var flat = function(arr, n) {
     let flattenedArr = [];
 
-    if (n > 0) { // Continue flattening if n > 0
-        arr.forEach((item) => {
-            if (Array.isArray(item)) {
-                flattenedArr = flattenedArr.concat(flat(item, n - 1)); // Correct recursive call
-            } else {
-                flattenedArr.push(item);
-            }
-        });
-    } else {
-        return arr; // If n is 0, return the array as is
-    }
-
+    arr.forEach((item) => {
+        if (Array.isArray(item)) {
+            // flattenedArr = flattenedArr.concat(flat(item, n - 1));] // Correct recursive call
+            flattenedArr.push(...flattenedArr(item, n - 1))
+        } else {
+            flattenedArr.push(item);
+        }
+    });
     return flattenedArr;
 };
 
