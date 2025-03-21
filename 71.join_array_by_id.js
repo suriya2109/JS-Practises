@@ -27,7 +27,7 @@ var join = function(arr1, arr2) {
             map.set(obj.id, structuredClone(obj));
         }
     });
-    return Array.from(map.values());
+    return Array.from(map.values()).sort((a, b) => (a.id - b.id));
 };
 
 
@@ -57,4 +57,4 @@ arr2 = [
     { "id": 1, "b": { "c": 84 }, "v": [1, 3] }
 ]
 
-join(arr1, arr2);
+console.log(join(arr1, arr2));
