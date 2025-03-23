@@ -29,6 +29,7 @@ var twoSum = function(nums, target) {
         let complement = target - nums[i];
         if (map.has(complement)) {
             return [map.get(complement), i];
+            // return [complement, nums[i]]; //values
         }
         map.set(nums[i], i);
     }
