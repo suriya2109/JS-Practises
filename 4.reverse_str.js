@@ -9,17 +9,9 @@
 // }
 // console.log(reverseFunc('suriya'));
 
-let addSum = function(nums, target) {
-    let map = new Map();
-    for (let i = 0; i < nums.length; i++) {
-        let complement = target - nums[i];
-        if (map.has(complement)) {
-            // return [map.get(complement), i]; Indecies 
-            return [complement, nums[i]]; //values
-        }
-        map.set(nums[i], i);
-    }
-    return [];
-}
+// const str1 = "GeeksForGeeks";
+// const substrResult = str1.substr(2, 7); //It's take length.
+// const substringResult = str1.substring(2, 7); // It's start to end string.
 
-console.log(addSum([2, 5, 6, 7, 8], 9));
+// console.log("Str.substr(7) =", substrResult);
+// console.log("Str.substring(7) =", substringResult);
