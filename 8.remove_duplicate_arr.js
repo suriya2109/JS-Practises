@@ -8,12 +8,12 @@
 
 // Method 2 filler and indexof
 
-// function removeDuplicateArr(arr){
-//     return arr.filter((val,index,self) => (self.indexOf(val) == index));
+// function removeDuplicateArr(arr1) {
+//     return arr1.filter((val, index, self) => (self.indexOf(val) === index))
 // }
-// const arr = [1,5,6,7,7,84,5,6,3,0];
+// const arr1 = [1, 5, 6, 7, 7, 84, 5, 6, 3, 0];
 
-// console.log(removeDuplicateArr(arr));
+// console.log(removeDuplicateArr(arr1));
 
 // Method3 reduce
 
@@ -26,7 +26,7 @@ function removeDuplicateArr(arr) {
     // console.log(result)
 
     const uniqueArray = [];
-    const uniqueArray1 = [];
+    const arrayDuplicate = [];
     const seen = {};
     for (let i = 0; i < arr.length; i++) {
         const value = arr[i];
@@ -34,10 +34,10 @@ function removeDuplicateArr(arr) {
             seen[value] = true;
             uniqueArray.push(value);
         } else {
-            uniqueArray1.push(value);
+            arrayDuplicate.push(value);
         }
     }
-    return uniqueArray, uniqueArray1;
+    return { uniqueArray, arrayDuplicate };
 };
 let arr = [1, 5, 6, 7, 7, 84, 5, 6, 3, 0];
 console.log(removeDuplicateArr(arr));
