@@ -1,13 +1,14 @@
-nestedArray = [1, 2, { name: "suriya" },
+let nestedArray = [1, 2, { name: "suriya" },
     [3, 4, 5, [6, 7]],
     [8, 9]
 ];
 
 function flattenArr(nestedArray) {
-    flatArr = [];
+    let flatArr = [];
     nestedArray.forEach(item => {
         if (Array.isArray(item)) {
             flatArr = flatArr.concat(flattenArr(item));
+            // flatArr.push(...flattenArr(item));
         } else {
             flatArr.push(item)
         }
@@ -35,32 +36,32 @@ console.log(flattenArr(nestedArray));
 
 // console.log(findFalttenArray(array, []));
 
-var flat = function(arr, n) {
-    let flattenedArr = [];
+// var flat = function(arr, n) {
+//     let flattenedArr = [];
 
-    arr.forEach((item) => {
-        if (Array.isArray(item)) {
-            // flattenedArr = flattenedArr.concat(flat(item, n - 1));] // Correct recursive call
-            flattenedArr.push(...flattenedArr(item, n - 1))
-        } else {
-            flattenedArr.push(item);
-        }
-    });
-    return flattenedArr;
-};
+//     arr.forEach((item) => {
+//         if (Array.isArray(item)) {
+//             // flattenedArr = flattenedArr.concat(flat(item, n - 1));] // Correct recursive call
+//             flattenedArr.push(...flattenedArr(item, n - 1))
+//         } else {
+//             flattenedArr.push(item);
+//         }
+//     });
+//     return flattenedArr;
+// };
 
-// Test Cases
-console.log(flat([1, 2, 3, 4, [4, 55, 6],
-    [5, 7, [7, 9, 20]]
-], 0));
-// Output: [1, 2, 3, 4, [4, 55, 6], [5, 7, [7, 9, 20]]] (unchanged)
+// // Test Cases
+// console.log(flat([1, 2, 3, 4, [4, 55, 6],
+//     [5, 7, [7, 9, 20]]
+// ], 0));
+// // Output: [1, 2, 3, 4, [4, 55, 6], [5, 7, [7, 9, 20]]] (unchanged)
 
-console.log(flat([1, 2, 3, 4, [4, 55, 6],
-    [5, 7, [7, 9, 20]]
-], 1));
-// Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, [7, 9, 20]] (flattened 1 level)
+// console.log(flat([1, 2, 3, 4, [4, 55, 6],
+//     [5, 7, [7, 9, 20]]
+// ], 1));
+// // Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, [7, 9, 20]] (flattened 1 level)
 
-console.log(flat([1, 2, 3, 4, [4, 55, 6],
-    [5, 7, [7, 9, 20]]
-], 2));
-// Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, 7, 9, 20] (flattened 2 levels)
+// console.log(flat([1, 2, 3, 4, [4, 55, 6],
+//     [5, 7, [7, 9, 20]]
+// ], 2));
+// // Output: [1, 2, 3, 4, 4, 55, 6, 5, 7, 7, 9, 20] (flattened 2 levels)
