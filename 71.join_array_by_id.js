@@ -1,33 +1,17 @@
-/**
- * @param {Array} arr1
- * @param {Array} arr2
- * @return {Array}
- */
 var join = function(arr1, arr2) {
-    // return arr1.concat(arr2);
-
-    // Step 1
-    let result = arr1.concat(arr2);
-
-    // Step 2
     let map = new Map();
 
-    // arr1.forEach(obj=>map.set(obj.id,obj));
-    // arr2.forEach(obj=>map.set(obj.id,obj));
-
-    // return Array.from(map.values());
-
-    // Step 3
-
     arr1.forEach(obj => map.set(obj.id, structuredClone(obj)));
+
     arr2.forEach(obj => {
         if (map.has(obj.id)) {
-            map.set(obj.id, {...map.get(obj.id), ...obj });
+            map.set(obj.id, {...map.get(obj.id), ...obj })
         } else {
             map.set(obj.id, structuredClone(obj));
         }
-    });
-    return Array.from(map.values()).sort((a, b) => (a.id - b.id));
+    })
+
+    return Array.from(map.values()).sort((a, b) => a.id - b.id);
 };
 
 

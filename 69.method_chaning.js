@@ -1,52 +1,38 @@
-class Calculator {
+class calculator {
     constructor(value) {
-        this.result = value;
+        return this.result = value;
     }
 
-    add(value) {
+    getAdd(value) {
         this.result += value;
         return this;
     }
-
-    subtract(value) {
+    getSub(value) {
         this.result -= value;
         return this;
     }
-
-    multiply(value) {
+    getMul(value) {
         this.result *= value;
         return this;
     }
-
-    divide(value) {
-        if (value === 0) {
-            throw new Error("Division by zero is not allowed");
-        }
+    getSub(value) {
         this.result /= value;
         return this;
     }
-
-    power(value) {
-        this.result = Math.pow(this.result, value);
+    getPow(value) {
+        this.result += Math.pow(this.result, value);
         return this;
     }
 
-    getResult() {
+    getResult(value) {
         return this.result;
     }
 }
 
-// Example Usage
-const calc = new Calculator(10)
-    .add(5)
-    .subtract(3)
-const calc2 = new Calculator(2)
-    .multiply(5)
-    .power(2);
 
-// const calc3 = new Calculator(20)
-// .divide(0)
+// const calc1 = new calculator(10).getAdd(3).getMul(4);
+// console.log(calc1.getResult());
 
-console.log(calc.getResult());
-console.log(calc2.getResult());
-// console.log(calc3.getResult());
+
+const calc2 = new calculator(20).getSub(3).getSub(4);
+console.log(calc2.getResult())

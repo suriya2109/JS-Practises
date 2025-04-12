@@ -1,26 +1,25 @@
 function counter() {
-    let counter = 0;
+    let count = 0;
     return {
-        increment: function() {
-            counter += 1;
-            return counter;
+        incrument: function() {
+            count += 1;
+            return count;
         },
-        reset: function() {
-            counter = 0;
-            return counter;
+        decrument: function() {
+            count -= 1;
+            return count;
         },
         display: function() {
-            let message = "The counts" + counter;
-            return message;
-        }
+            const result = "the count of result is: " + count;
+            return result;
+        },
     }
-};
+}
 
-let mycount = counter();
-console.log(mycount.increment());
-console.log(mycount.increment());
-console.log(mycount.increment());
-console.log(mycount.reset());
-console.log(mycount.increment());
-console.log(mycount.increment());
-console.log(mycount.increment());
+let counterNumber = counter();
+
+console.log(counterNumber.incrument());
+// console.log(counterNumber.decrument());
+console.log(counterNumber.incrument());
+// console.log(counterNumber.decrument());
+console.log(counterNumber.display());

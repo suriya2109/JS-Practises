@@ -6,6 +6,7 @@ function chunkArray(arr, size) {
     return result;
 }
 
+
 // Example usage
 console.log(chunkArray([1, 2, 3, 4, 5], 1)); // [[1],[2],[3],[4],[5]]
 console.log(chunkArray([1, 9, 6, 3, 2], 3)); // [[1,9,6],[3,2]]

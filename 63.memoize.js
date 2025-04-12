@@ -20,51 +20,26 @@
 // console.log(add_memo(1, 2));
 
 
+const map = new Map();
+
 function memoize(fn) {
-    const cache = new Map();
-    let callCount = 0;
-
-    const memoizedFunction = (...args) => {
-        const key = JSON.stringify(args);
-        if (cache.has(key)) {
-            console.log("Getting from the cache");
-            return cache.get(key);
+    return function(...arg) {
+        const key = JSON.stringify(arg);
+        if (map.has(key)) {
+            console.log("getting from cache");
+            return map.get(key);
         }
-        callCount++;
-        const result = fn(...args);
-        cache.set(key, result);
-        console.log("Computation from the values");
+        const result = fn(...arg);
+        map.set(key, result);
+        console.log("computing values")
         return result;
-    };
-
-    memoizedFunction.getCallCount = () => callCount;
-
-    return memoizedFunction;
+    }
 }
 
-// Example usage:
-const sum = (a, b) => a + b;
-const fib = (n) => (n <= 1 ? 1 : fib(n - 1) + fib(n - 2));
-const factorial = (n) => (n <= 1 ? 1 : n * factorial(n - 1));
+const add = (a, b) => (a + b);
 
-// Memoized versions
-const memoizedSum = memoize(sum);
-const memoizedFib = memoize(fib);
-const memoizedFactorial = memoize(factorial);
+const add_memo = memoize(add);
 
-// Test cases
-console.log(memoizedSum(2, 2)); // 4
-console.log(memoizedSum(2, 2)); // 4 (cached)
-console.log(memoizedSum.getCallCount()); // 1
-console.log(memoizedSum(1, 2)); // 3
-console.log(memoizedSum.getCallCount()); // 2
 
-console.log(memoizedFactorial(2)); // 2
-console.log(memoizedFactorial(3)); // 6
-console.log(memoizedFactorial(2)); // 2 (cached)
-console.log(memoizedFactorial.getCallCount()); // 2
-console.log(memoizedFactorial(3)); // 6 (cached)
-console.log(memoizedFactorial.getCallCount()); // 2
-
-console.log(memoizedFib(5)); // 8
-console.log(memoizedFib.getCallCount()); // 1
+console.log(add_memo(2, 4));
+console.log(add_memo(2, 4));

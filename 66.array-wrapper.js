@@ -7,7 +7,8 @@ class arrayWrapper {
     }
 
     toString() {
-        return JSON.stringify(this.nums);
+        const resultStr = JSON.stringify(this.nums);
+        return resultStr.toString();
         // return `[${this.nums.join(",")}]`;
     }
 }
