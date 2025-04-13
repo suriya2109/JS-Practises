@@ -8,3 +8,75 @@ Important topic to Learn
 6.	Promises, async/await
 7.	Compare Objects	
 8.	Prototypes, inheritance
+
+
+
+Nice! Practicing JavaScript is a great move, especially as a front-end developer. Here are some fun and structured ways to level up:
+
+🧠 Core Practice Areas
+
+💡 JavaScript Fundamentals
+
+Variables, scopes, closures
+
+Functions (declaration, expressions, arrow functions)
+
+Arrays & Objects
+
+Promises, async/await
+
+DOM manipulation
+
+🧩 Algorithm Practice (especially for interviews)
+
+LeetCode: Stick with Top 150 questions
+
+Codewars or HackerRank: Focus on 6–7 kyu JavaScript problems
+
+Practice these categories:
+
+Arrays & Strings
+
+Recursion
+
+Hash Maps
+
+Sorting & Searching
+
+Sliding Window / Two Pointers
+
+🎯 Real-World Mini Projects
+
+A weather app using fetch API
+
+To-do list with localStorage
+
+Form validation tool
+
+Image carousel
+
+Modal / Tooltip / Accordion components
+
+🛠 DOM + Event Handling
+
+Make everything from scratch using Vanilla JS before using Angular/React.
+
+Example: Build your own lightbox or dropdown menu.
+
+📚 Advanced Concepts
+
+Closures, Currying, Debouncing, Throttling
+
+Event loop & Call Stack
+
+ES6+ features (destructuring, spread/rest, modules)
+
+🗓️ How about a schedule like this?
+
+Monday–Friday: 1 LeetCode problem/day (easy to medium)
+
+Saturday: Build or improve a mini-project
+
+Sunday: Review JS theory + refactor old code
+
+👨‍💻 Want me to send you one challenge daily or suggest a JS project idea each week? I can also create a personal roadmap if you’d like.
