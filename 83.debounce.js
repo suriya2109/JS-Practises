@@ -16,7 +16,7 @@ var debounce = function(fn, t) {
 let start = Date.now();
 
 function funcLog(...args) {
-    console.log(`${Date.now - start}ms:`, args);
+    console.log(`${Date.now() - start}ms:`, args);
 }
 
 const dlog = debounce(funcLog, 50);
