@@ -10,4 +10,4 @@ function findFactorialNum(num) {
     return factorialNum;
 }
 
-console.log(findFactorialNum(5))
+console.log(findFactorialNum(5));

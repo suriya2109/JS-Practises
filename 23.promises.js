@@ -8,7 +8,6 @@ const myPromises = new Promise((resolve, reject) => {
         }
     }, 1000);
 });
-
 myPromises
     .then((result) => {
         console.log(result);

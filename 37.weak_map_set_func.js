@@ -12,7 +12,7 @@ let weakset = new WeakSet();
 let obj = { name: "suriya" };
 
 weakset.add(obj, "maddy");
-obj = null;
+// obj = null;
 console.log(weakset.has(obj));
 
 // What are Weak maps and Weak sets in JavaScript? 

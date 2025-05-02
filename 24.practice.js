@@ -10,7 +10,7 @@
 //     return longestWord;
 // }
 
-// console.log(findLongString("suriya is a businessman"));
+// console.log(findLongString("Suriya is a businessman"));
 // duplicate array
 // let arr = [1, 2, 2, 3, 54, 56, 7, 8, 56, 9, 9, 8];
 
@@ -25,7 +25,7 @@
 //     // reverse = '';
 
 //     // for (i = str.length - 1; i >= 0; i--) {
-//     //     reverse = reverse + str[i];
+//     //     reverse = reverse +=str[i];
 //     //     reverse += str[i];
 //     // }
 //     // return reverse;
@@ -68,4 +68,4 @@ var map = function(arr, fn) {
     return retrunArray;
 };
 
-console.log(map([1, 2, 3], 3));
+console.log(map([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 10));
