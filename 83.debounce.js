@@ -1,24 +1,21 @@
-/**
- * @param {Function} fn
- * @param {number} t milliseconds
- * @return {Function}
- */
 var debounce = function(fn, t) {
     let timer;
     return function(...args) {
         clearTimeout(timer);
         timer = setTimeout(() => {
-            fn(...args);
-        }, t)
+            fn(...args)
+        }, t);
     }
-};
+}
 
 let start = Date.now();
 
-function funcLog(...args) {
-    console.log(`${Date.now() - start}ms:`, args);
+function funlog(...args) {
+    let elapsed = Date.now() - start;
+    console.log(`${elapsed}ms:`, args);
 }
 
-const dlog = debounce(funcLog, 50);
-setTimeout(() => dlog(1), 50);
-setTimeout(() => dlog(2), 75);
+var dlong = debounce(funlog, 50);
+
+setTimeout(() => dlong(1), 75);
+setTimeout(() => dlong(2), 100);
