@@ -1,6 +1,6 @@
 var filter = function(arr, fn) {
     let returnedArray = [];
-    for (i = 0; i <= arr.length; i++) {
+    for (let i = 0; i <= arr.length; i++) {
         if (fn(arr[i], i)) {
             returnedArray.push(arr[i]);
         }

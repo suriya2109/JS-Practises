@@ -31,6 +31,7 @@ function memoize(fn) {
         }
         const result = fn(...arg);
         map.set(key, result);
+        console.log(key, result, "testing");
         console.log("computing values")
         return result;
     }
