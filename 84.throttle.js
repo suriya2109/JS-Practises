@@ -2,6 +2,7 @@ function throttle(func, delay) {
     let lastCall = 0;
     return function(...args) {
         const now = new Date().getTime();
+        console.log(now, new Date().toISOString())
         if (now - lastCall >= delay) {
             lastCall = now;
             func.apply(this, args);

@@ -1,7 +1,7 @@
-let nestedArray = [1, 2, { name: "suriya" },
-    [3, 4, 5, [6, 7]],
-    [8, 9]
-];
+// let nestedArray = [1, 2, { name: "suriya" },
+//     [3, 4, 5, [6, 7]],
+//     [8, 9]
+// ];
 
 // function flattenArr(nestedArray) {
 //     let flatArr = [];
@@ -36,7 +36,7 @@ let nestedArray = [1, 2, { name: "suriya" },
 
 // console.log(findFalttenArray(array, []));
 
-var flat = function(arr, n) {
+function flat(arr, n) {
     let flattenedArr = [];
 
     arr.forEach((item) => {
@@ -53,7 +53,7 @@ var flat = function(arr, n) {
 // // Test Cases
 console.log(flat([1, 2, 3, 4, [4, 55, 6],
     [5, 7, [7, 9, 20]]
-], 1));
+], 2));
 // // Output: [1, 2, 3, 4, [4, 55, 6], [5, 7, [7, 9, 20]]] (unchanged)
 
 // console.log(flat([1, 2, 3, 4, [4, 55, 6],
