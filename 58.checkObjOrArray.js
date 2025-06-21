@@ -10,7 +10,7 @@ function isEmpty(obj) {
     }
 }
 
-console.log(isEmpty({}));
+// console.log(isEmpty({}));
 // console.log(isEmpty({ name: "suriya" }));
 // console.log(isEmpty([]));
-// console.log(isEmpty([87]));
+console.log(isEmpty([87]));
