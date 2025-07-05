@@ -16,6 +16,7 @@
 // Q 2
 
 // Closure means that an inner function has access to the variables of its outer function, even after the outer function has returned.
+// Encapsulates logic and data, making your code cleaner.
 // function exam() {
 //     const name = "rowdy";
 

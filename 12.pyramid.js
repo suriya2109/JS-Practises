@@ -38,17 +38,17 @@ function pyramidPattern(rows) {
         }
         console.log(spaces + starts)
     }
-    for (let i = rows - 1; i >= 1; i--) {
-        let spaces = "";
-        let starts = "";
-        for (let j = rows - 1; j >= i; j--) {
-            spaces += " ";
-        }
-        for (let k = 1; k <= i; k++) {
-            starts += "*";
-        }
-        console.log(spaces + starts)
-    }
+    // for (let i = rows - 1; i >= 1; i--) {
+    //     let spaces = "";
+    //     let starts = "";
+    //     for (let j = rows - 1; j >= i; j--) {
+    //         spaces += " ";
+    //     }
+    //     for (let k = 1; k <= i; k++) {
+    //         starts += "*";
+    //     }
+    //     console.log(spaces + starts)
+    // }
 
 }
 

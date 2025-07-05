@@ -11,6 +11,8 @@ Concepts for Interviews
 9. Event Looping 
 10. Event Bubbling 
 
+0) Hoisting
+The closure allows the function to access the state in which it was created. Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase, regardless of where they are declared in the code.
 
 1) DOM?
 The DOM represents the web page as a tree-like structure.
@@ -88,9 +90,9 @@ __________
 
 13) Explaination about aysyc and await ?
 What is the use of async and await in JavaScript? 
-async 
+1)async 
 Declaring a function with async makes it return a promise 
-await 
+2)await 
 It pauses the execution of the code until the promise it's waiting for is resolved, then returns the resolved value.
 __________
 
@@ -167,3 +169,30 @@ __________
 22) What is JavaScript's Strict mode, and how is it enabled? 
 It enforces various rules to make your code cleaner and more secure
 
+23) What is this js?
+🎯 Simple Analogy
+Think of this as “who’s talking.”
+
+Arrow function → uses the voice of whoever was talking when it was written.
+
+Method → the object before the dot is talking.
+
+Constructor → a brand new object is talking.
+
+24) ✅ What’s the Purpose of try...catch in JavaScript?
+try...catch is used to handle errors gracefully without crashing your program.
+
+try block → Code that might cause an error.
+
+catch block → Runs if there is an error, so you can handle it.
+
+✅ Why Use It?
+✅ Prevents your app from breaking completely when an error happens.
+✅ Lets you show friendly messages instead of scary errors.
+✅ Helps you debug problems.
+
+25) ✅ Best Practice
+Always declare variables before you use them.
+And prefer let or const instead of var.
+26) 🧠 What does Object.freeze() do?
+It makes an object immutable:
