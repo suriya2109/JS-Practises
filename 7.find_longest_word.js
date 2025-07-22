@@ -11,5 +11,5 @@ function findLongestWord(sentence) {
     return longestwords;
 }
 
-const sentence = "The suriya is businessman";
+const sentence = "The suriya is a businessman";
 console.log(findLongestWord(sentence));

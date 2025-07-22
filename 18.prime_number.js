@@ -9,4 +9,4 @@ function isPrime(number) {
     return true;
 }
 
-console.log(isPrime(0)); // false (Correct Output)
+console.log(isPrime(7)); // false (Correct Output)
