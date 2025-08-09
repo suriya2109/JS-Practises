@@ -43,9 +43,19 @@
 
 // console.log(getSneakyNumbers([0, 3, 2, 1, 3, 2]));
 
-var plusOne = function(digits) {
-    let result = Number(digits.join('')) + 1;
-    return result.toString().split('').map(Number);
+// var plusOne = function(digits) {
+//     let result = Number(digits.join('')) + 1;
+//     return result.toString().split('').map(Number);
+// };
+
+// console.log(plusOne([1, 2, 3, 4, 5]));
+var singleNumber = function(nums) {
+    result = 0;
+    for (let num of nums) {
+        result ^= num;
+    }
+    return result;
 };
 
-console.log(plusOne([1, 2, 3, 4, 5]));
+nums = [2, 2, 1, 3, 3, 3, 3, 3, 2, 2];
+console.log(singleNumber(nums));

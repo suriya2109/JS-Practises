@@ -7,7 +7,7 @@ function findMissingNumber(arr) {
 
     const totalVal = totalSum - arrSum;
 
-    console.log(totalVal);
+    return totalVal;
 
     // let total = arr.length + 1;
     // let num = new Set(arr);
