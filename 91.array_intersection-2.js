@@ -20,16 +20,18 @@
 // intersect(nums1, nums2);
 
 var uniqueOccurrences = function(arr) {
-    let countMap = {};
+    let maxCount = 0;
+    let count = 0;
+
     for (let num of arr) {
-        countMap[num] = (countMap[num] || 0) + 1;
+        if (num === 1) {
+            count++;
+            maxCount = Math.max(maxCount, count);
+        } else {
+            count = 0; // Reset count for other numbers
+        }
     }
-    let counts = Object.values(countMap);
-    let uniqueCounts = new Set(counts);
-    console.log(counts.length, uniqueCounts.size);
-    return counts.length === uniqueCounts.size;
+    return maxCount;
 };
 
-let arr = [1, 2, 2, 1, 1, 3, 3]
-
-console.log(uniqueOccurrences(arr))
+console.log(uniqueOccurrences([1, 2, 2, 1, 1, 3, 3]))
