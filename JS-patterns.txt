@@ -1,0 +1,170 @@
+🔑 Common Algorithm Patterns (for LeetCode + Interviews)
+1. Two Pointers
+
+When to use: Arrays, linked lists, searching for pairs, substrings.
+
+Examples:
+
+Remove Duplicates from Sorted Array
+
+Valid Palindrome
+
+Container With Most Water
+
+2. Sliding Window
+
+When to use: Subarrays/substrings with conditions (sum, length, distinct chars).
+
+Examples:
+
+Longest Substring Without Repeating Characters
+
+Minimum Window Substring
+
+Maximum Average Subarray
+
+3. Fast & Slow Pointers (Cycle Detection)
+
+When to use: Linked list cycle, middle of list, palindrome check.
+
+Examples:
+
+Linked List Cycle
+
+Find Middle Node in Linked List
+
+4. Merge Intervals
+
+When to use: Interval problems (meeting rooms, merging ranges).
+
+Examples:
+
+Merge Intervals
+
+Insert Interval
+
+5. Cyclic Sort (Index-based placement)
+
+When to use: Numbers in range [1…n].
+
+Examples:
+
+Find Missing Number
+
+Find Duplicate Number
+
+6. In-place Reversal of Linked List
+
+When to use: Reverse sublists, detect palindromes.
+
+Examples:
+
+Reverse Linked List
+
+Reverse Nodes in k-Group
+
+7. Tree Traversals (DFS & BFS)
+
+When to use: Binary tree, graph traversal.
+
+Examples:
+
+Binary Tree Level Order Traversal (BFS)
+
+Path Sum (DFS)
+
+8. Graph Traversal (DFS/BFS + Union Find)
+
+When to use: Connectivity, islands, shortest path.
+
+Examples:
+
+Number of Islands
+
+Clone Graph
+
+Course Schedule
+
+9. Binary Search
+
+When to use: Sorted arrays, searching ranges.
+
+Examples:
+
+Search in Rotated Sorted Array
+
+Find First and Last Position in Sorted Array
+
+10. Heap / Priority Queue
+
+When to use: Top-K problems, scheduling, shortest paths.
+
+Examples:
+
+Kth Largest Element in Array
+
+Merge K Sorted Lists
+
+11. Backtracking
+
+When to use: Combinations, permutations, subsets.
+
+Examples:
+
+N-Queens
+
+Subsets / Permutations
+
+Word Search
+
+12. Dynamic Programming (DP)
+
+When to use: Overlapping subproblems, optimal choices.
+
+Types:
+
+1D DP → Fibonacci, House Robber
+
+2D DP → Longest Common Subsequence, Edit Distance
+
+Knapsack DP → Partition Equal Subset Sum
+
+13. Greedy
+
+When to use: Interval scheduling, activity selection, minimum steps.
+
+Examples:
+
+Jump Game
+
+Gas Station
+
+14. Topological Sort
+
+When to use: Scheduling, dependency resolution (DAGs).
+
+Examples:
+
+Course Schedule
+
+Alien Dictionary
+
+15. Bit Manipulation
+
+When to use: XOR tricks, subsets, single number.
+
+Examples:
+
+Single Number
+
+Subsets with Bitmasking
+
+16. Mathematical Patterns
+
+When to use: GCD/LCM, combinatorics, prime checks.
+
+Examples:
+
+Pow(x, n)
+
+Sieve of Eratosthenes
