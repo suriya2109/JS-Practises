@@ -35,6 +35,7 @@ var twoSum = function(nums, target) {
     // }
     // return [];
 
+    // Two pointer method
     left = 0;
     right = nums.length - 1;
     while (left < right) {
