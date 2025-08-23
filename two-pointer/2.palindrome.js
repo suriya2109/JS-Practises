@@ -14,6 +14,7 @@ function checkPalindrome(str) {
 
 
     if (str < 0) return false;
+    tosri
     let origin = str;
     reversed = 0;
     while (str > 0) {
