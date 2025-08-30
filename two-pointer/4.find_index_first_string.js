@@ -1,30 +1,13 @@
-// function findIndexOfFristString(haystack, needle) {
+// Approach (Two-Pointer way)
 
-//     // return haystack.indexOf(needle);
-//     if (needle === "") return 0;
+// We have two pointers:
 
-//     console.log(haystack.length - needle.length);
+// i → goes over the haystack
 
-//     for (let i = 0; i <= haystack.length - needle.length; i++) {
-//         let j = 0;
-//         for (; j < needle.length; j++) {
-//             console.log(haystack[i]);
-//             if (haystack[i + j] !== needle[j]) {
-//                 break;
-//             }
-//         }
-//         if (j === needle.length) {
-//             return i;
-//         }
-//     }
-//     return -1;
-// }
+// j → goes over the needle
 
-// console.log(findIndexOfFristString("sadbutsad", "sad")); // Output: 0
-// let haystack = "sadbutsad";
-// let needle = "sad";
-
-
+// If characters match → move both.
+// If mismatch → reset j and shift i back to the next possible start.
 var strStr = function(haystack, needle) {
     if (needle === "") return 0; // edge case
 
