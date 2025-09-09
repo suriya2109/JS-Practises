@@ -1,7 +1,10 @@
 function largestNumber(nums) {
     let num = nums.map(String);
-    // let result = num.sort((a, b) => (b + a) - (a + b));
-    let result = num.sort((a, b) => (b + a).localeCompare(a + b));
+    console.log(num);
+    let result = num.sort((a, b) => {
+        console.log((b + a) - (a + b))
+    });
+    // let result = num.sort((a, b) => (b + a).localeCompare(a + b));
 
     if (result[0] === '0') {
         console.log('0');
