@@ -17,16 +17,22 @@
 
 // }
 var findDisappearedNumbers = function(nums) {
-    let nums1 = new Set(nums);
-    let result = [];
-    for (let i = 1; i < nums.length + 1; i++) {
-        if (!nums1.has(i)) {
-            result.push(i);
+    let set = new Set();
+    let duplicate = -1;
+
+    for (let num of nums) {
+        if (set.has(num)) {
+            duplicate = num;
+        }
+        set.add(num);
+    }
+    for (let i = 1; i < nums.length; i++) {
+        if (!set.has(i)) {
+            return [duplicate, i];
         }
     }
-    return result;
 };
-let nums = [4, 3, 2, 7, 8, 2, 3, 1]
+let nums = [1, 2, 2, 4]
 console.log(findDisappearedNumbers(nums));
 
 // console.log(findMissingNumber([10, 2, 3, 4, 1, 5, 9, 6, 8]));
