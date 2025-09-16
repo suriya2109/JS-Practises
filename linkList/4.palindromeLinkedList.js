@@ -65,6 +65,7 @@ function PalindromLinkedList(head) {
     return true;
 }
 
+// reverse function
 function reverse(root) {
     let prev = null;
 
