@@ -28,7 +28,8 @@ var uniqueOccurrences = function(arr) {
             count++;
             maxCount = Math.max(maxCount, count);
         } else {
-            count = 0; // Reset count for other numbers
+            count = 0;
+            // Reset count for other numbers
         }
     }
     return maxCount;
