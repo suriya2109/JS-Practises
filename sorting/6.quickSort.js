@@ -52,8 +52,8 @@ class Solution {
 }
 
 
-let obj = new Solution;
+let object = new Solution;
 
 let arr = [10, 7, 8, 9, 1, 5];
-obj.quickSort(arr, 0, arr.length - 1)
+object.quickSort(arr, 0, arr.length - 1)
 console.log(arr);
