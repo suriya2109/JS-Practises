@@ -21,17 +21,17 @@
 // Other Way
 // let array = [21, 2, 34, {}, { name: "suriya" }[3, 45], 6, 7, [5, 67, [4, 9, 0]]];
 
-// function findFalttenArray(array, falttenArry) {
+// function findFalttenArray(array, flattenArray) {
 //     for (let i = 0; i < array.length; i++) {
 //         if (Array.isArray(array[i])) {
-//             // falttenArry = falttenArry.concat(findFalttenArray(array[i]));
+//             // flattenArray = flattenArray.concat(findFalttenArray(array[i]));
 
-//             findFalttenArray(array[i], falttenArry)
+//             findFalttenArray(array[i], flattenArray)
 //         } else {
-//             falttenArry.push(array[i]);
+//             flattenArray.push(array[i]);
 //         }
 //     }
-//     return falttenArry;
+//     return flattenArray;
 // }
 
 // console.log(findFalttenArray(array, []));
