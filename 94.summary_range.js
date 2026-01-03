@@ -13,13 +13,13 @@ function SummaryRange(nums) {
 
     while (i < nums.length) {
         let start = nums[i];
-        while (i + 1 < nums.length && nums[i + 1] === nums[i] + 1) {
+        while (nums[i + 1] == nums[i] + 1) {
             i++;
         }
-        if (start === nums[i]) {
-            result.push(`${start}`);
+        if (start == nums[i]) {
+            result.push(`${nums[i]}`);
         } else {
-            result.push(`${start}-> ${nums[i]}`)
+            result.push(`${start} -> ${nums[i]}`);
         }
         i++;
     }
