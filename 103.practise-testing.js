@@ -100,18 +100,61 @@
 // console.log(isEven(50));
 // console.log(isEven(75));
 
-function countChar(string, n) {
-    let countBs = 0;
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === n) {
-            countBs++;
-        }
-    }
-    return countBs;
-}
+// function countChar(string, n) {
+//     let countBs = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] === n) {
+//             countBs++;
+//         }
+//     }
+//     return countBs;
+// }
 
-function countBean(string) {
-    return countChar(string, "o");
-}
+// function countBean(string) {
+//     return countChar(string, "o");
+// }
 
-console.log(countBean("the Ball is red colour"))
+// console.log(countBean("the Ball is red colour"))
+
+// const journal = [
+//     { events: ["work", "touched tree", "pizza"], squirrel: false },
+//     { events: ["work", "ice cream", "cauliflower"], squirrel: false },
+//     { events: ["weekend", "peanuts", "brushed teeth"], squirrel: false },
+//     { events: ["weekend", "peanuts"], squirrel: true },
+//     { events: ["work", "peanuts", "brushed teeth"], squirrel: false },
+//     { events: ["weekend", "cycling"], squirrel: false },
+//     { events: ["peanuts"], squirrel: false },
+//     { events: ["weekend", "peanuts"], squirrel: false },
+//     { events: ["weekend"], squirrel: true },
+//     { events: ["work", "peanuts"], squirrel: false }
+// ];
+
+// function tableFor(event, journal) {
+//     let table = [0, 0, 0, 0];
+
+//     for (let entry of journal) {
+//         let index = 0;
+
+//         if (entry.events.includes(event)) index += 2;
+//         if (entry.squirrel) index += 1;
+
+//         table[index]++;
+//     }
+
+//     return table;
+// }
+
+// const peanutsTable = tableFor("peanuts", journal);
+// console.log(peanutsTable);
+
+// console.log(phi([76, 9, 4, 1]));
+// // → 0.068
+// function phi(table) {
+//     return (table[3] * table[0] - table[2] * table[1]) /
+//         Math.sqrt(
+//             (table[2] + table[3]) *
+//             (table[0] + table[1]) *
+//             (table[1] + table[3]) *
+//             (table[0] + table[2])
+//         );
+// }
