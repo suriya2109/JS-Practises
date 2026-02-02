@@ -62,20 +62,20 @@
 // → [{name: "Adlam", …}, …]
 
 
-const obj = function() {
-    let counter = 0;
-    return function increment() {
-        counter++;
-        return counter;
-    }
-}
+// const obj = function() {
+//     let counter = 0;
+//     return function increment() {
+//         counter++;
+//         return counter;
+//     }
+// }
 
-let obj1 = obj();
-let obj2 = obj();
+// let obj1 = obj();
+// let obj2 = obj();
 
-console.log(obj1());
-console.log(obj1());
-console.log(obj2());
+// console.log(obj1());
+// console.log(obj1());
+// console.log(obj2());
 
 // const text = {
 //     name: "abc",
@@ -85,3 +85,59 @@ console.log(obj2());
 //         }
 //     }
 // }
+
+// let roseDragon = "🌹🐉";
+// for (let char of roseDragon) {
+//     console.log(char.codePointAt(0));
+//     console.log(char.codePointAt(0).toString(16).toUpperCase());
+// }
+// → 🌹
+// → �
+
+
+// function countBy(items, groupName) {
+//     let counts = [];
+//     for (let item of items) {
+//         let name = groupName(item);
+//         let known = counts.find(c => c.name == name);
+//         if (!known) {
+//             counts.push({ name, count: 1 });
+//         } else {
+//             known.count++;
+//         }
+//     }
+//     return counts;
+// }
+// console.log(countBy([1, 2, 3, 4, 5], n => n > 2));
+// // → [{name: false, count: 2}, {name: true, count: 3}]
+
+// let arrays = [
+//     [1, 2, 3],
+//     [4, [1, 23, 4], 5],
+//     [6]
+// ];
+
+// function flatten(arrays) {
+//     return arrays.reduce((flat, current) => {
+//         return flat.concat(Array.isArray(current) ? flatten(current) : current);
+//     }, []);
+// }
+
+// console.log(flatten(arrays));
+
+// let sum = 0;
+
+// function loop(start, test, update, body) {
+//     for (let value = start; test(value); value = update(value)) {
+//         body(value);
+//     }
+// }
+
+// loop(
+//     1,
+//     n => n <= 5,
+//     n => n + 1,
+//     n => sum += n
+// );
+
+// console.log(sum);
