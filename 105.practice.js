@@ -125,19 +125,13 @@
 
 // console.log(flatten(arrays));
 
-// let sum = 0;
+let sum = 0;
+let n = 0;
 
-// function loop(start, test, update, body) {
-//     for (let value = start; test(value); value = update(value)) {
-//         body(value);
-//     }
-// }
+function loop(start, test, update, body) {
+    for (let value = start; test(value); value = update(value)) {
+        body(value);
+    }
+};
 
-// loop(
-//     1,
-//     n => n <= 5,
-//     n => n + 1,
-//     n => sum += n
-// );
-
-// console.log(sum);
+console.log(loop(0, n => n <= 5, n => n + 1, n => sum + n));
